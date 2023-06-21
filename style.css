@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: 
+		linear-gradient(60deg, #29323c 0%, 
+		#485563 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.wrapper {
+	position: relative;
+	background-color: antiquewhite;
+	border-radius: 50%;
+	border: 15px solid #fff;
+	width: 500px;
+	height: 500px;
+	overflow: hidden;
+	transition: 5s;
+	z-index: 0;
+}
+
+.wrapper div {
+	position: absolute;
+	left: 135px;
+	width: 200px;
+	height: 50%;
+	clip-path: polygon(100% 0, 50% 100%, 0 0);
+	transform: translate(-50%);
+	transform-origin: bottom;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.wrapper .first {
+	background: 
+	linear-gradient(120deg, #e0c3fc 0%, 
+	#8ec5fc 100%);
+	left: 50%;
+}
+
+.wrapper .second {
+	background: 
+	linear-gradient(to top, #cfd9df 0%, 
+	#e2ebf0 100%);
+	transform: rotate(45deg);
+}
+
+.wrapper .third {
+	background: 
+	linear-gradient(120deg, #f093fb 0%, 
+	#f5576c 100%);
+	transform: rotate(90deg);
+}
+
+.wrapper .fourth {
+	background: 
+	linear-gradient(to right, #fa709a 0%, 
+	#fee140 100%);
+	transform: rotate(135deg);
+}
+
+.wrapper .fifth {
+	background: 
+	linear-gradient(to right, #43e97b 0%, 
+	#38f9d7 100%);
+	transform: rotate(180deg);
+}
+
+.wrapper .sixth {
+	background: 
+	linear-gradient(to top, #30cfd0 0%, 
+	#330867 100%);
+	transform: rotate(225deg);
+}
+
+.wrapper .seventh {
+	background: 
+		linear-gradient(to top, #c71d6f 0%, 
+		#d09693 100%);
+	transform: rotate(270deg);
+}
+
+.wrapper .eighth {
+	background: 
+	linear-gradient(15deg, #13547a 0%, 
+	#80d0c7 100%);
+	transform: rotate(315deg);
+}
+
+.arrow {
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	transform: translate(-50%);
+	color: #fff;
+}
+
+.arrow::before {
+	content: '\2965';
+	font-size: 50px;
+}
+
+.btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100px;
+	background-color: #e2e2e2;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: 1px solid #fff;
+	color: #13547a;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+
+

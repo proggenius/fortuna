@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dev Room</title>
+</head>
+<body>
+
+<!-- HTML -->
+<span class="arrow"></span>
+<div class="wrapper">
+	<div class="first">1</div>
+	<div class="second">2</div>
+	<div class="third">3</div>
+	<div class="fourth">4</div>
+	<div class="fifth">5</div>
+	<div class="sixth">6</div>
+	<div class="seventh">7</div>
+	<div class="eighth">8</div>
+</div>
+<button id="spin" class="btn">
+		Click
+</button>
+
+<!-- JAVASCRIPT -->
+<script>
+const wrapper = 
+	document.querySelector('.wrapper');
+
+const button = 
+	document.querySelector('.btn');
+
+let number = 
+	Math.ceil(Math.random() * 1000);
+
+function btnClick() {
+	wrapper.style.transform = 
+		'rotate(' + number + 'deg)';
+
+	number += Math.ceil(Math.random() * 1000);
+}
+
+button.addEventListener('click', 
+	btnClick
+)
+
+</script>
+
+</body>
+</html>
